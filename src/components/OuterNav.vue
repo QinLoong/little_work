@@ -6,7 +6,9 @@
       <div class="time">{{ formattedTime }}</div>
     </div>
     <div class="over-body">
-      <div class="mid-box"></div>
+      <div class="mid-box">
+        <slot></slot>
+      </div>
       <div class="botton-box" v-if="singleBtn === 'showOne'">
         <button @click="goBack">返回首页</button>
       </div>
