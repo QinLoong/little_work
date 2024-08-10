@@ -2,28 +2,24 @@
   <div class="arrow">
     <div class="over-header">
       <img src="../assets/logo_hk_top.png" class="logo" />
-      <div class="date">{{ formattedDate }}</div>
-      <div class="time">{{ formattedTime }}</div>
+      <div class="date">{{ date1 }}</div>
+      <div class="time">{{ time1 }}</div>
     </div>
     <div class="over-body">
       <div class="mid-box">
         <slot></slot>
       </div>
       <div class="botton-box" v-if="singleBtn === 'showOne'">
-        <button @click="goBack">返回首页</button>
+        <button @click="$router.push('/')">返回首页</button>
       </div>
       <div class="botton-box" v-else-if="singleBtn === 'showTow'">
-        <button @click="getToBack">返回首页</button>
-        <button @click="getBack" class="button" style="margin-left: 10px">
+        <button @click="$router.push('/')">返回首页</button>
+        <button @click="$router.go(-1)" class="button" style="margin-left: 10px">
           返回上一页
         </button>
       </div>
     </div>
     <div class="feo"></div>
-    <div v-if="loading" class="loading-overlay">
-      <div class="spinner"></div>
-      <p>加载中...</p>
-    </div>
   </div>
 </template>
 
@@ -32,9 +28,8 @@ export default {
   props: ["singleBtn"],
   data() {
     return {
-      formattedDate: "",
-      formattedTime: "",
-      loading: false,
+      date1: "",
+      time1: "",
     };
   },
   mounted() {
@@ -46,16 +41,8 @@ export default {
     clearInterval(this.timer); // 组件销毁前清除定时器
   },
   methods: {
-    goBack() {
-      this.loading = true;
-      setTimeout(() => {
-        this.$router.push("/");
-        this.loading = false;
-      }, 1000);
-    },
     updateDateTime() {
       const now = new Date();
-
       // 获取星期几
       const weekdays = [
         "星期日",
@@ -70,17 +57,15 @@ export default {
       // 获取日期
       const date = now.toISOString().slice(0, 10); // YYYY-MM-DD
 
-      // 获取时间，包含小时、分钟、秒
-      const timeOptions = {
+      const time = now.toLocaleTimeString("zh-CN", {
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
-      };
-      const time = now.toLocaleTimeString("zh-CN", timeOptions); // 使用中文格式
+      }); // 使用中文格式
 
       // 格式化日期和时间
-      this.formattedDate = `${weekday} ${date}`;
-      this.formattedTime = time;
+      this.date1 = `${weekday} ${date}`;
+      this.time1 = time;
     },
   },
 };
