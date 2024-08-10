@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>jrcs_02</title>
+    <defs>
+        <radialGradient cx="12.2495995%" cy="6.8002308%" fx="12.2495995%" fy="6.8002308%" r="146.548782%" gradientTransform="translate(0.122496,0.068002),scale(0.792511,1.000000),rotate(27.667958),translate(-0.122496,-0.068002)" id="radialGradient-1">
+            <stop stop-color="#D9CBA6" offset="0%"></stop>
+            <stop stop-color="#725228" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="55.8571579%" y1="100%" x2="55.8571579%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#D6C185" offset="0.00956075175%"></stop>
+            <stop stop-color="#F2E6CA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="jrcs_02" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16,114.622256 L16,77.3984057 L16,77.3984057 C16,72.8421026 18.2873777,70.4583054 20.6940025,72.7391659 L34.0876286,83.2766327 C35.8871769,84.8152654 38.5864994,86.9119234 40.0933501,85.0861515 L55.4491343,66.4546098 C56.9505646,64.6288379 59.6715684,62.0500028 61.4819573,63.5778001 L74.6967127,75.0742035 C76.5071016,76.5911653 80.2633877,79.2512662 81.7377164,77.4038234 L114.606575,41.5740642 C119.051242,36.5084953 124,37.6949761 124,43.9036841 L124,114.622256 C124,119.801441 119.801441,124 114.622256,124 L25.3777436,124 C20.1985588,124 16,119.801441 16,114.622256 Z" id="路径" fill="url(#radialGradient-1)" fill-rule="nonzero"></path>
+        <path d="M119.376607,12.0739488 C120.317439,11.9753504 121.15213,11.9753504 121.738256,12.0739488 C121.879957,13.112783 121.500893,13.7580098 120.951606,14.4706204 L80.6772623,62.0011665 C79.7830956,63.1382631 78.4606492,63.8652108 77.0145469,64.0159021 C75.5678082,64.1666598 74.1212826,63.7278068 73.0089266,62.8004615 L56.634293,49.1273098 L40.525009,70.2211618 C39.6483154,71.371313 38.3364695,72.1169196 36.8927566,72.2869913 C35.4483251,72.4571476 33.9961723,72.0366382 32.8696168,71.1201856 L19.8551551,60.5615632 C18.7129397,59.6346233 18.0572461,58.3365995 17.9213649,56.986841 C17.7855403,55.6376439 18.16919,54.2372302 19.1037241,53.1051586 C20.0401812,51.9707575 21.3519333,51.3206394 22.7152615,51.1857164 C24.0791517,51.0507378 25.4951324,51.4312892 26.6393028,52.3598156 L35.3470942,59.4302751 L51.5113401,38.2712032 C52.3952934,37.1094729 53.7225697,36.3600565 55.180974,36.1978112 C56.6400687,36.0354889 58.1024404,36.4750497 59.2254711,37.4148253 L75.6327175,51.1272888 L97.2991757,24.1843065 L90.485837,18.5819379 C89.7911468,18.0092531 89.2838713,17.4385886 88.9970925,16.8693364 C88.8292881,16.536247 88.7340346,16.2122809 88.8097346,15.9086148 C88.8856343,15.6041475 89.1227428,15.3610168 89.4285137,15.1433534 C89.9502152,14.7719796 90.6678207,14.5013208 91.5520744,14.3158202 L119.376607,12.0739488 Z" id="路径" fill="url(#linearGradient-2)"></path>
+    </g>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>

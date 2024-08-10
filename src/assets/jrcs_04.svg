@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>jrcs_04</title>
+    <defs>
+        <radialGradient cx="12.2495995%" cy="6.8002308%" fx="12.2495995%" fy="6.8002308%" r="228.739971%" gradientTransform="translate(0.122496,0.068002),scale(0.471012,1.000000),rotate(17.307331),translate(-0.122496,-0.068002)" id="radialGradient-1">
+            <stop stop-color="#D9CBA6" offset="0%"></stop>
+            <stop stop-color="#725228" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="12.2495995%" cy="6.8002308%" fx="12.2495995%" fy="6.8002308%" r="157.742712%" gradientTransform="translate(0.122496,0.068002),scale(0.722798,1.000000),rotate(25.556141),translate(-0.122496,-0.068002)" id="radialGradient-2">
+            <stop stop-color="#D9CBA6" offset="0%"></stop>
+            <stop stop-color="#725228" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="55.8571579%" y1="100%" x2="55.8571579%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#D6C185" offset="0.00956075175%"></stop>
+            <stop stop-color="#F2E6CA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="jrcs_04" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M43.8998637,36.40294 C43.8998637,36.40294 55.0737155,45.678698 69.4631698,45.678698 C83.8526241,45.678698 95.3641875,36.40294 95.3641875,36.40294 C95.3641875,36.40294 107.830154,25.20147 101.428315,20.39454 C95.0264759,15.5876099 85.4530838,21.99685 85.4530838,21.99685 C85.4530838,21.99685 78.1115255,14 69.4631698,14 C60.8148141,14 53.7962843,21.99685 53.7962843,21.99685 C53.7962843,21.99685 44.2082092,15.60231 37.8210534,20.39454 C31.4338977,25.1867699 43.8998637,36.40294 43.8998637,36.40294 Z" id="路径" fill="url(#radialGradient-1)" fill-rule="nonzero"></path>
+        <path d="M46.6685277,46 C53.7568103,50.1291775 61.799343,52.3334231 70,52.39454 C78.2978908,52.2985083 86.4361028,50.098499 93.6545009,46 L93.6708032,46.0005319 C94.2011064,46.0205448 107.559412,46.7247145 117.63203,67.1093319 C127.220106,86.954456 123.064784,99.1114319 123.064784,99.1114319 C123.064784,99.1114319 144.795796,126.953406 70,126.953406 C-4.79579615,126.953406 16.9352165,99.434834 16.9352165,99.434834 C16.9352165,99.434834 16.9164382,99.3720954 16.8846886,99.2488168 L16.8544334,99.1283744 C16.3514921,97.0783578 13.9367772,84.9032051 22.3679696,67.432734 C30.5552755,50.2865468 41.1952491,46.8573094 45.1237463,46.1714619 L45.4056564,46.1249957 C46.0782556,46.0208326 46.5068501,46.0034721 46.6310316,46.0005787 Z M69,66 C56.2974508,66 46,76.2974508 46,89 C46,101.702549 56.2974508,112 69,112 C81.7025492,112 92,101.702549 92,89 C92,76.2974508 81.7025492,66 69,66 Z" id="形状结合" fill="url(#radialGradient-2)" fill-rule="nonzero"></path>
+        <polygon id="矩形" fill="url(#linearGradient-3)" transform="translate(70.000000, 88.000000) rotate(-45.000000) translate(-70.000000, -88.000000) " points="60.0115477 78.0115477 80 78 79.9884523 97.9884523 60 98"></polygon>
+    </g>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>

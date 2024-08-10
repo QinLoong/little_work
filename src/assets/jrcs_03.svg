@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>jrcs_03</title>
+    <defs>
+        <radialGradient cx="12.2495995%" cy="6.8002308%" fx="12.2495995%" fy="6.8002308%" r="133.728818%" gradientTransform="translate(0.122496,0.068002),scale(1.000000,0.796296),rotate(39.719937),translate(-0.122496,-0.068002)" id="radialGradient-1">
+            <stop stop-color="#D9CBA6" offset="0%"></stop>
+            <stop stop-color="#725228" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="55.8571579%" y1="100%" x2="55.8571579%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#D6C185" offset="0.00956075175%"></stop>
+            <stop stop-color="#F2E6CA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="jrcs_03" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16,80 C16,92.5906667 35.2544445,102.8 59,102.8 C65.1483614,102.8 70.9956248,102.115535 76.2855096,100.882492 C76.5855085,103.043944 77.1249236,105.176224 77.8952539,107.241822 C79.0947667,110.493108 80.8246884,113.555284 83.0155126,116.305017 C83.7979737,117.296033 84.6401928,118.243104 85.5367658,119.141307 C78.2291363,122.184309 69.0139317,124 59,124 C35.2544445,124 16,113.790667 16,101.2 L16,80 Z M102,48 L102,69.2 C102,70.1491161 101.890586,71.0847002 101.678083,72.0033991 C97.7434697,72.0429589 93.8451576,72.8349559 90.2141856,74.3445327 L76,80.2344701 L76.0009481,90.1481694 C70.7862254,91.3398158 65.038321,92 59,92 C35.2544445,92 16,81.7906667 16,69.2 L16,48 C16,60.5906667 35.2544445,70.8 59,70.8 C82.7455555,70.8 102,60.5906667 102,48 Z M59,16 C82.7455555,16 102,25.8511111 102,38 C102,50.1488889 82.7455555,60 59,60 C35.2544445,60 16,50.1488889 16,38 C16,25.8511111 35.2544445,16 59,16 Z" id="形状结合" fill="url(#radialGradient-1)" fill-rule="nonzero"></path>
+        <path d="M102.000084,77 C105.183097,77 108.361646,77.6513672 111.348232,78.9496094 L121.999971,83.5900391 L121.999971,96.7970703 C122.004406,99.8068359 121.495481,102.789648 120.491024,105.619727 C119.508888,108.400391 118.102648,111.005859 116.321411,113.341797 C114.535709,115.718164 112.379475,117.789062 109.941992,119.464648 C107.526831,121.122266 104.834885,122.317187 101.99562,123 C99.15189,122.32168 96.4510164,121.117773 94.0269264,119.451172 C91.5894437,117.771094 89.433209,115.704688 87.6475074,113.32832 C85.8796628,110.996875 84.4823513,108.400391 83.5091439,105.628711 C82.5046868,102.798633 81.9912976,99.8158203 82.0001116,96.8060547 L82.0001116,83.5900391 L92.6474719,78.9541016 C95.6295936,77.6513672 98.817071,77 102.000084,77 Z M103.409618,85.0624246 C103.133936,84.5347474 102.34427,84.5347474 102.068587,85.0624246 L98.9005781,91.1595351 C98.8491798,91.2659574 98.7417104,91.3369056 98.6202233,91.3546426 L91.5319196,92.3301803 C90.915139,92.4144313 90.6721649,93.1283475 91.11606,93.5407339 L96.2465527,98.2853944 C96.3353317,98.3696454 96.3727124,98.4849362 96.3540221,98.600227 L95.1438239,105.300397 C95.0363545,105.881286 95.6811706,106.324712 96.2278624,106.049788 L102.568553,102.888159 C102.676023,102.834947 102.806855,102.834947 102.914324,102.888159 L109.255015,106.049788 C109.801707,106.320277 110.446523,105.881286 110.339054,105.300397 L109.128856,98.600227 C109.110165,98.4849362 109.147546,98.3652111 109.236325,98.2853944 L114.366818,93.5407339 C114.810713,93.1283475 114.563066,92.4144313 113.946286,92.3301803 L106.857982,91.3546426 C106.736495,91.3369056 106.633698,91.2659574 106.577627,91.1595351 Z" id="形状结合" fill="url(#linearGradient-2)"></path>
+    </g>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>
